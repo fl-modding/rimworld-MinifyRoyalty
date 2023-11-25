@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!--  Royalty remove "un-minifiable" tags -->
+<Operation Class="PatchOperationRemove">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="Drape" or defName="Brazier" or defName="DarklightBrazier" or defName="Throne" or defName="GrandThrone" or defName="UnstablePowerCell" or defName="Gloomlight" or defName="Defoliator" or defName="Harp" or defName="Harpsichord" or defName="Piano" or defName="ShipLandingBeacon" or defName="NatureShrine_Small" or defName="NatureShrine_Large"]/minifiedDef</xpath>
+</Operation>
+
+<!--  Royalty remove blank Categories -->
+<Operation Class="PatchOperationRemove">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="Drape" or defName="Brazier" or defName="DarklightBrazier" or defName="Throne" or defName="GrandThrone" or defName="UnstablePowerCell" or defName="Gloomlight" or defName="Defoliator" or defName="Harp" or defName="Harpsichord" or defName="Piano" or defName="ShipLandingBeacon" or defName="NatureShrine_Small" or defName="NatureShrine_Large"]/thingCategories</xpath>
+</Operation>
+
+<!--  Royalty building minify tag -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="Drape" or defName="Brazier" or defName="DarklightBrazier" or defName="Throne" or defName="GrandThrone" or defName="UnstablePowerCell" or defName="Gloomlight" or defName="Defoliator" or defName="Harp" or defName="Harpsichord" or defName="Piano" or defName="ShipLandingBeacon" or defName="NatureShrine_Small" or defName="NatureShrine_Large"]</xpath>
+	<value>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</value>
+</Operation>
+
+<!-- Royalty building categories -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="Drape" or defName="Brazier" or defName="Throne" or defName="GrandThrone" or defName="UnstablePowerCell" or defName="Gloomlight" or defName="Defoliator" or defName="Harp" or defName="Harpsichord" or defName="Piano" or defName="ShipLandingBeacon"]</xpath>
+	<value>
+		<thingCategories> <li>BuildingsMisc</li> </thingCategories>
+	</value>
+</Operation>
+
+<!-- Royalty building Mass -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="DarklightBrazier" or defName="Defoliator"]/statBases</xpath>
+	<value>
+	    <Mass>5</Mass>
+	</value>
+</Operation>
+
+</Patch>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>[GMT] Minify Royalty</name>
+	<author>Grizzlemethiss</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>GMT.Minify.Royalty</packageId>
+    <url>https://discord.gg/8NnTJMCVdk</url>
+
+	<incompatibleWith>
+		<!-- <li>erdelf.MinifyEverything</li> -->
+	</incompatibleWith>
+
+	<description>
+&lt;color=purple&gt;&lt;b&gt;About &lt;/b&gt;&lt;/color&gt;
+Makes items added from Royalty minifiable.
+
+</description>
+
+</ModMetaData>
